@@ -1,0 +1,291 @@
+﻿namespace HotelReservationSystem
+{
+    partial class BookingForm
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            components = new System.ComponentModel.Container();
+            Guest = new Label();
+            GuestBox = new ComboBox();
+            CheckInDate = new Label();
+            CheckInDatePicker = new DateTimePicker();
+            CheckOutDate = new Label();
+            CheckOutDatePicker = new DateTimePicker();
+            SearchButton = new Button();
+            AvailableRooms = new Label();
+            BookButton = new Button();
+            ServiceLabel = new Label();
+            bookingBindingSource = new BindingSource(components);
+            bookingRoomBindingSource = new BindingSource(components);
+            bookingServiceBindingSource = new BindingSource(components);
+            BookingDataView = new DataGridView();
+            bookingIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            checkInDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            checkOutDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            guestDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            bookingBindingSource1 = new BindingSource(components);
+            pictureBox1 = new PictureBox();
+            AvailableRoom = new CheckedListBox();
+            Service = new CheckedListBox();
+            ((System.ComponentModel.ISupportInitialize)bookingBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bookingRoomBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bookingServiceBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BookingDataView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bookingBindingSource1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // Guest
+            // 
+            Guest.AutoSize = true;
+            Guest.Location = new Point(38, 65);
+            Guest.Name = "Guest";
+            Guest.Size = new Size(42, 17);
+            Guest.TabIndex = 0;
+            Guest.Text = "Guest";
+            // 
+            // GuestBox
+            // 
+            GuestBox.FormattingEnabled = true;
+            GuestBox.Location = new Point(172, 57);
+            GuestBox.Name = "GuestBox";
+            GuestBox.Size = new Size(200, 25);
+            GuestBox.TabIndex = 1;
+            // 
+            // CheckInDate
+            // 
+            CheckInDate.AutoSize = true;
+            CheckInDate.Location = new Point(38, 99);
+            CheckInDate.Name = "CheckInDate";
+            CheckInDate.Size = new Size(95, 17);
+            CheckInDate.TabIndex = 2;
+            CheckInDate.Text = "Check In Date";
+            // 
+            // CheckInDatePicker
+            // 
+            CheckInDatePicker.Location = new Point(172, 93);
+            CheckInDatePicker.Name = "CheckInDatePicker";
+            CheckInDatePicker.Size = new Size(236, 25);
+            CheckInDatePicker.TabIndex = 3;
+            // 
+            // CheckOutDate
+            // 
+            CheckOutDate.AutoSize = true;
+            CheckOutDate.Location = new Point(38, 145);
+            CheckOutDate.Name = "CheckOutDate";
+            CheckOutDate.Size = new Size(105, 17);
+            CheckOutDate.TabIndex = 4;
+            CheckOutDate.Text = "Check Out Date";
+            // 
+            // CheckOutDatePicker
+            // 
+            CheckOutDatePicker.Location = new Point(172, 139);
+            CheckOutDatePicker.Name = "CheckOutDatePicker";
+            CheckOutDatePicker.Size = new Size(236, 25);
+            CheckOutDatePicker.TabIndex = 5;
+            // 
+            // SearchButton
+            // 
+            SearchButton.Location = new Point(189, 186);
+            SearchButton.Name = "SearchButton";
+            SearchButton.Size = new Size(114, 33);
+            SearchButton.TabIndex = 6;
+            SearchButton.Text = "Search";
+            SearchButton.UseVisualStyleBackColor = true;
+            SearchButton.Click += SearchButton_Click;
+            // 
+            // AvailableRooms
+            // 
+            AvailableRooms.AutoSize = true;
+            AvailableRooms.Location = new Point(539, 37);
+            AvailableRooms.Name = "AvailableRooms";
+            AvailableRooms.Size = new Size(107, 17);
+            AvailableRooms.TabIndex = 7;
+            AvailableRooms.Text = "Available Rooms";
+            // 
+            // BookButton
+            // 
+            BookButton.Location = new Point(326, 217);
+            BookButton.Name = "BookButton";
+            BookButton.Size = new Size(117, 43);
+            BookButton.TabIndex = 9;
+            BookButton.Text = "Book";
+            BookButton.UseVisualStyleBackColor = true;
+            BookButton.Click += BookButton_Click;
+            // 
+            // ServiceLabel
+            // 
+            ServiceLabel.AutoSize = true;
+            ServiceLabel.Location = new Point(548, 172);
+            ServiceLabel.Name = "ServiceLabel";
+            ServiceLabel.Size = new Size(98, 17);
+            ServiceLabel.TabIndex = 11;
+            ServiceLabel.Text = "Select Services";
+            // 
+            // bookingBindingSource
+            // 
+            bookingBindingSource.CurrentChanged += bookingBindingSource_CurrentChanged;
+            // 
+            // bookingRoomBindingSource
+            // 
+            bookingRoomBindingSource.DataSource = typeof(Models.BookingRoom);
+            // 
+            // bookingServiceBindingSource
+            // 
+            bookingServiceBindingSource.DataSource = typeof(Models.BookingService);
+            // 
+            // BookingDataView
+            // 
+            BookingDataView.AllowUserToDeleteRows = false;
+            BookingDataView.AutoGenerateColumns = false;
+            BookingDataView.BackgroundColor = Color.AliceBlue;
+            BookingDataView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            BookingDataView.Columns.AddRange(new DataGridViewColumn[] { bookingIdDataGridViewTextBoxColumn, checkInDataGridViewTextBoxColumn, checkOutDataGridViewTextBoxColumn, guestDataGridViewTextBoxColumn });
+            BookingDataView.DataSource = bookingBindingSource1;
+            BookingDataView.Location = new Point(32, 288);
+            BookingDataView.Name = "BookingDataView";
+            BookingDataView.ReadOnly = true;
+            BookingDataView.RowHeadersWidth = 51;
+            BookingDataView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            BookingDataView.Size = new Size(556, 150);
+            BookingDataView.TabIndex = 14;
+            // 
+            // bookingIdDataGridViewTextBoxColumn
+            // 
+            bookingIdDataGridViewTextBoxColumn.DataPropertyName = "BookingId";
+            bookingIdDataGridViewTextBoxColumn.HeaderText = "BookingId";
+            bookingIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            bookingIdDataGridViewTextBoxColumn.Name = "bookingIdDataGridViewTextBoxColumn";
+            bookingIdDataGridViewTextBoxColumn.ReadOnly = true;
+            bookingIdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // checkInDataGridViewTextBoxColumn
+            // 
+            checkInDataGridViewTextBoxColumn.DataPropertyName = "CheckIn";
+            checkInDataGridViewTextBoxColumn.HeaderText = "CheckIn";
+            checkInDataGridViewTextBoxColumn.MinimumWidth = 6;
+            checkInDataGridViewTextBoxColumn.Name = "checkInDataGridViewTextBoxColumn";
+            checkInDataGridViewTextBoxColumn.ReadOnly = true;
+            checkInDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // checkOutDataGridViewTextBoxColumn
+            // 
+            checkOutDataGridViewTextBoxColumn.DataPropertyName = "CheckOut";
+            checkOutDataGridViewTextBoxColumn.HeaderText = "CheckOut";
+            checkOutDataGridViewTextBoxColumn.MinimumWidth = 6;
+            checkOutDataGridViewTextBoxColumn.Name = "checkOutDataGridViewTextBoxColumn";
+            checkOutDataGridViewTextBoxColumn.ReadOnly = true;
+            checkOutDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // guestDataGridViewTextBoxColumn
+            // 
+            guestDataGridViewTextBoxColumn.DataPropertyName = "Guest";
+            guestDataGridViewTextBoxColumn.HeaderText = "Guest";
+            guestDataGridViewTextBoxColumn.MinimumWidth = 6;
+            guestDataGridViewTextBoxColumn.Name = "guestDataGridViewTextBoxColumn";
+            guestDataGridViewTextBoxColumn.ReadOnly = true;
+            guestDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bookingBindingSource1
+            // 
+            bookingBindingSource1.DataSource = typeof(Models.Booking);
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Screenshot_2025_07_26_072905;
+            pictureBox1.Location = new Point(730, 358);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(87, 80);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
+            // AvailableRoom
+            // 
+            AvailableRoom.FormattingEnabled = true;
+            AvailableRoom.Location = new Point(667, 33);
+            AvailableRoom.Name = "AvailableRoom";
+            AvailableRoom.Size = new Size(150, 104);
+            AvailableRoom.TabIndex = 16;
+            // 
+            // Service
+            // 
+            Service.FormattingEnabled = true;
+            Service.Location = new Point(667, 156);
+            Service.Name = "Service";
+            Service.Size = new Size(150, 104);
+            Service.TabIndex = 17;
+            // 
+            // BookingForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PowderBlue;
+            ClientSize = new Size(839, 450);
+            Controls.Add(Service);
+            Controls.Add(AvailableRoom);
+            Controls.Add(pictureBox1);
+            Controls.Add(BookingDataView);
+            Controls.Add(BookButton);
+            Controls.Add(ServiceLabel);
+            Controls.Add(AvailableRooms);
+            Controls.Add(SearchButton);
+            Controls.Add(CheckOutDatePicker);
+            Controls.Add(CheckOutDate);
+            Controls.Add(CheckInDatePicker);
+            Controls.Add(CheckInDate);
+            Controls.Add(GuestBox);
+            Controls.Add(Guest);
+            Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Name = "BookingForm";
+            Text = "BookingForm";
+            Load += BookingForm_Load;
+            ((System.ComponentModel.ISupportInitialize)bookingBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bookingRoomBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bookingServiceBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BookingDataView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bookingBindingSource1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label Guest;
+        private ComboBox GuestBox;
+        private Label CheckInDate;
+        private DateTimePicker CheckInDatePicker;
+        private Label CheckOutDate;
+        private DateTimePicker CheckOutDatePicker;
+        private Button SearchButton;
+        private Label AvailableRooms;
+        private Button BookButton;
+        private Label ServiceLabel;
+        private BindingSource bookingBindingSource;
+        private BindingSource bookingRoomBindingSource;
+        private BindingSource bookingServiceBindingSource;
+        private DataGridView BookingDataView;
+        private BindingSource bookingBindingSource1;
+        private PictureBox pictureBox1;
+        private CheckedListBox AvailableRoom;
+        private CheckedListBox Service;
+        private DataGridViewTextBoxColumn bookingIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn checkInDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn checkOutDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn guestDataGridViewTextBoxColumn;
+    }
+}
