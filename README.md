@@ -3,6 +3,7 @@
 A C# Windows Forms desktop application developed to manage hotel room reservations, guests, services, payments, and reports using SQL Server.
 
 Project Overview
+
 The Hotel Reservation System is designed for front desk staff and hotel managers to efficiently handle daily hotel operations.  
 It reduces manual work, avoids booking conflicts, and provides accurate billing and reporting.
 
