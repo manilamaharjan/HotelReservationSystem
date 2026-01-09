@@ -26,37 +26,37 @@ It reduces manual work, avoids booking conflicts, and provides accurate billing 
 📊 Database & System Design
 
 ### Entity Relationship Diagram (ERD)
-![ER Diagram](screenshots/diagrams/er-diagram.png)
+![ER Diagram](UIanddiagramsscreenshots/diagrams/er-diagram.png)
 
 ### Data Flow Diagram (DFD)
-![Data Flow Diagram](screenshots/diagrams/data-flow-diagram.png)
+![Data Flow Diagram](UIanddiagramsscreenshots/diagrams/data-flow-diagram.png)
 
 
 ## 🖥 Application Screenshots
 
 ### Login Form
-![Login Form](screenshots/ui/login-form.png)
+![Login Form](UIanddiagramsscreenshots/ui/login-form.png)
 
 ### Front Desk Dashboard
-![Front Desk Dashboard](screenshots/ui/frontdesk-dashboard.png)
+![Front Desk Dashboard](UIanddiagramsscreenshots/ui/frontdesk-dashboard.png)
 
 ### Manager Dashboard
-![Manager Dashboard](screenshots/ui/manager-dashboard.png)
+![Manager Dashboard](UIanddiagramsscreenshots/ui/manager-dashboard.png)
 
 ### Guest Form
-![Guest Form](screenshots/ui/guest-form.png)
+![Guest Form](UIanddiagramsscreenshots/ui/guest-form.png)
 
 ### Room Form
-![Room Form](screenshots/ui/room-form.png)
+![Room Form](UIanddiagramsscreenshots/ui/room-form.png)
 
 ### Service Form
-![Service Form](screenshots/ui/service-form.png)
+![Service Form](UIanddiagramsscreenshots/ui/service-form.png)
 
 ### Booking Form
-![Booking Form](screenshots/ui/booking-form.png)
+![Booking Form](UIanddiagramsscreenshots/ui/booking-form.png)
 
 ### Payment Form
-![Payment Form](screenshots/ui/payment-form.png)
+![Payment Form](UIanddiagrams screenshots/ui/payment-form.png)
 
 ### Report Form
-![Report Form](screenshots/ui/report-form.png)
+![Report Form](UIanddiagrams screenshots/ui/report-form.png)
